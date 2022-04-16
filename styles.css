@@ -14,7 +14,7 @@ button {
 
 /* Hero is topmost section in dark blue */
 
-.hero {
+.hero, .footer {
     padding: 50px;
     color: #E5E7EB;
     font-size: 18px;
@@ -22,7 +22,7 @@ button {
 }
 
 /* Top menu bar */
-.hero .menu {
+.hero .menu, .main {
     display: flex;
 }
 
@@ -40,11 +40,6 @@ button {
     display: inline;
 }
 
-/* Main text area in Hero section */
-.hero .main {
-   display: flex; 
-}
-
 .hero .first {
     font-size: 48px;
     font-weight: bold;
@@ -58,36 +53,66 @@ button {
     padding: 15px;
 }
 
+.info {
+     text-align: center;   
+}
 .info h1 {
     font-size: 36px;
     font-weight: 800;
     color: #1F2937;
 }
 
-.info li{
-    display: inline;
+.info ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.info ul li {
+    flex-direction: column;
+    flex: 1 1 0%;
+    list-style-type: none;
+}
+
+.info img {
+    height: auto;
+    width: 150px;
+    border-radius: 15px;
+    border: 5px solid #3882F6;
 }
 
 .quote {
     background-color: #E5E7EB;
+    padding: 50px;
 }
 
 .quote .big-text {
     font-size: 36px;
-    font-weight: 300;
+    font-weight: 100;
     font-style: italic;
     color: #1F2937;
 }
 
-.quote .attribution{
+.quote .attribution {
     text-align: right;
     font-weight: bold;
 }
 
-.action{
+.action {
     background-color: #3882F6;
+    color: #E5E7EB;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+    padding: 50px;
 }
 
 .action button{
+    border: 2px solid #E5E7EB;
+}
 
+.footer {
+    text-align: center;
 }
